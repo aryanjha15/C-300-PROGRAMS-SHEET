@@ -17,4 +17,5 @@ int main(){
     } else {
         cout << "Invalid month." << endl;
     }
+    return 0;
 }
