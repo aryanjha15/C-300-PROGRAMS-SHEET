@@ -10,5 +10,13 @@ int main(){
         cout << "The numbers cannot form a Pythagorean triplet." << endl;
     }
     return 0;
-        
+
 }
+
+// A Pythagorean triplet is a set of three numbers that satisfy:
+// a² + b² = c², where c is the largest number.
+// Examples:
+
+// (3, 4, 5) ✅ because 3² + 4² = 5²
+// (5, 12, 13) ✅
+// (6, 8, 10) ✅
