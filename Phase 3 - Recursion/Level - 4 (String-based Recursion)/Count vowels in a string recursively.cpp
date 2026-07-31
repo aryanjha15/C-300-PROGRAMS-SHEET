@@ -16,7 +16,6 @@ int main() {
     string str;
     cout << "Enter a string: ";
     getline(cin, str);
-    int vowelCount = countVowels(str, 0);
-    cout << "Number of vowels in the string: " << vowelCount << endl;
+    cout << "Number of vowels in the string: " << countVowels(str, 0) << endl;
     return 0;
 }
