@@ -16,7 +16,6 @@ int main(){
     }
 
     cout<<"The elements that appear more than once in the first array are: ";
-
     for(int i=0; i<n; i++){
         int count = 0;
         for(int j=0; j<n; j++){
@@ -27,7 +26,9 @@ int main(){
         if(count > 1){
             cout<<arr[i]<<" ";
         }
-
+        else{
+            cout<<"";
+        }
     }
 
     cout<<"\nThe elements that appear more than once in the second array are: ";
@@ -41,10 +42,16 @@ int main(){
         if(count > 1){
             cout<<brr[i]<<" ";
         }
-
+        else{
+            cout<<"";
+        }
     }
-
 
     cout<<endl;
     return 0;
-}
+}   
+
+
+
+
+
