@@ -1,15 +1,25 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
+
+int main() {
     string str;
-    cout<<"Enter a string: ";
+    cout << "Enter a sentence: ";
     getline(cin, str);
+
     int count = 0;
-    for(int i=0; i<str.length(); i++){
-        if(str[i] != ' '){
+    bool inWord = false;
+
+    for (char ch : str) {
+        if (ch != ' ' && !inWord) {
             count++;
+            inWord = true;
+        }
+        else if (ch == ' ') {
+            inWord = false;
         }
     }
-    cout<<"The number of words in the string is: "<<count;
+
+    cout << "Number of words = " << count << endl;
+
     return 0;
 }
