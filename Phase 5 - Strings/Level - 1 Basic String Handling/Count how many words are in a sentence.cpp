@@ -9,7 +9,9 @@ int main() {
     int count = 0;
     bool inWord = false;
 
-    for (char ch : str) {
+    for (int i = 0; i < str.length(); i++) {
+    char ch = str[i];
+
         if (ch != ' ' && !inWord) {
             count++;
             inWord = true;
