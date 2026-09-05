@@ -8,12 +8,8 @@ int main(){
     cin>>b;
     cout<<"Enter c";
     cin>>c;
-    if((a+b>c) || (b+c>a) || (c+a>b) ){
-        cout<<"Vlid Triangle";
-    }
-    else{
-        cout<<"Invalid Triangle";
-        
-    }
+    if(a+b>c && a+c>b && b+c>a)
+    cout << "Valid";
+    else cout << "Invalid";
 
 }
